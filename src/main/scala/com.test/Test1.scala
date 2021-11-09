@@ -12,7 +12,7 @@ object Test1 {
         .map(word => (word, 1))
         .reduceByKey(_+_)
       counts.collect()
-      // counts.saveAsTextFile("hdfs://...")
+       counts.saveAsTextFile("hdfs://...")
     }
 
 }
